@@ -1,12 +1,10 @@
 import React from "react";
 import { isAuthenticated } from "../services/auth";
-// Instalar os types
 import { BrowserRouter, Route, Switch, Redirect, RouteProps, RouteComponentProps } from "react-router-dom";
 
 // Páginas
 import Login from "../pages/Login";
 import Home from "../pages/Home";
-
 
 // Rotas privadas - Lógica 
 export const PrivateRoute = ({ component, ...rest }: RouteProps) => {
@@ -21,6 +19,7 @@ export const PrivateRoute = ({ component, ...rest }: RouteProps) => {
     const render = (props: RouteComponentProps<any>): React.ReactNode => {
         if (isAuthenticated()) {
             return (
+                // Aqui pode ser adicionado um template ou HTML padrão
                 <div>
                     <Component {...props} />
                 </div>
