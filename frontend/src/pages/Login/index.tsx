@@ -1,11 +1,14 @@
 import React from 'react';
 import { useState } from 'react'
+import { useHistory } from 'react-router-dom'
 
 import { login } from "../../services/auth";
 import api from '../../services/api'
 
 
 const Login: React.FC = () => {
+
+    const history = useHistory();
 
     const usernameRef = React.createRef<HTMLInputElement>();
     const passwordRef = React.createRef<HTMLInputElement>();
@@ -30,12 +33,12 @@ const Login: React.FC = () => {
             }
         }).then((response) => {
             login(response.data.token)
-            //return history.push("/home")
+            return history.push("/home")
         }).catch((response) => {
             if (response.response.status === 401) {
                 showError('Usuário ou senha inválidos')
             }
-            return
+            return false
         })
     }
 

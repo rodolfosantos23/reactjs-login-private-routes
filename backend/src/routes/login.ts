@@ -1,6 +1,8 @@
 import express from 'express'
 import crypto from 'crypto'
 import jwt from 'jsonwebtoken'
+import { TOKEN_KEY } from './../config/token_key';
+
 
 const routes = express.Router()
 
@@ -29,7 +31,7 @@ routes.post('/login', (req, res) => {
         // ID do usuário hardcoded, deve ser o ID do usuário no Banco de Dados
         const id = 'user_id_hardcoded'
 
-        const token = jwt.sign({ id }, 'secret_token_value', {
+        const token = jwt.sign({ id }, TOKEN_KEY, {
             expiresIn: (req.body.remember) ? '7d' : '24h'
         })
 

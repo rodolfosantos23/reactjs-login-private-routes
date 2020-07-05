@@ -71,7 +71,7 @@ body, html {
     font-size: 14px;
     -webkit-user-select: none;
     user-select: none;
-    padding-top: 2px;
+    padding-top: 4px;
 }
 
 .checkbox input {

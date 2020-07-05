@@ -1,0 +1,1 @@
+export const TOKEN_KEY = 'secret_token_key'
