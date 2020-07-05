@@ -40,6 +40,7 @@ routes.post('/login', (req, res) => {
         return
     }
 
+    // Usuário ou senha inválidos
     res.status(401).json({ 'error': 'Incorrect username or password' })
 
 })

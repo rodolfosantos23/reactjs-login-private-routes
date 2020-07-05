@@ -2,13 +2,6 @@ import { Request, Response, NextFunction } from "express";
 import jwt from 'jsonwebtoken'
 import { TOKEN_KEY } from './../config/token_key';
 
-// Cria interface para o Express para utilizar com Typescript
-declare module 'express-serve-static-core' {
-    interface Response {
-        error: (code: number, message: string) => Response;
-        success: (code: number, message: string, result: any) => Response
-    }
-}
 
 const routeHandler = (req: Request, res: Response, next: NextFunction) => {
 
