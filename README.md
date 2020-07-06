@@ -1,6 +1,8 @@
 # Login com ReactJS, NodeJS com rotas privadas em Typescript
 Exemplo de uma tela de login com rotas privadas criada com ReactJS e NodeJS.
 
+O login é feito com Basic Auth, é gerado um Token pelo Json Web Token, esse token deve ser enviado nas requisições via **bearer authentication**.
+
 Não foquei na estilização CSS dos components e sim na sua lógica.
 
 O usuário e senha estão **hard-code**, fixos diretamente no código para facilitar, mas devem ser implementados
