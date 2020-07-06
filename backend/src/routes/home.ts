@@ -1,4 +1,3 @@
-import api from '../config/server'
 import express from 'express'
 
 const routes = express.Router()
