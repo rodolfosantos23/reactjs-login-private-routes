@@ -62,13 +62,13 @@ Para testar utilize o usuário **`usuario`** e senha **`senhasecreta`**
 
 Exemplo de login **inválido**:
 
-<img src="https://rodolfosantos.com.br/wp-content/uploads/2020/07/login-senha-incorreta.gif" width="500" />
+<img src="https://github.com/rodolfosantos23/imagens/blob/master/reactjs-login-private-routes/login-senha-incorreta.gif" width="500" />
 
 
 Exemplo de login **válido**:
 
-<img src="https://rodolfosantos.com.br/wp-content/uploads/2020/07/login-senha-correta.gif" width="500" />
+<img src="https://github.com/rodolfosantos23/imagens/blob/master/reactjs-login-private-routes/login-senha-correta.gif" width="500" />
 
 Exemplo de **logout**:
 
-<img src="https://rodolfosantos.com.br/wp-content/uploads/2020/07/login-logout.gif" width="500" />
+<img src="https://github.com/rodolfosantos23/imagens/blob/master/reactjs-login-private-routes/login-logout.gif" width="500" />
